@@ -1,0 +1,72 @@
+import { StyleSheet } from 'react-native';
+
+export const palette = {
+  paper: '#F2F5F3',
+  white: '#FFFFFF',
+  ink: '#202B25',
+  muted: '#54645A',
+  line: '#D4DED7',
+  leaf: '#246347',
+  accent: '#246347',
+  darknav: '#183128',
+  onDark: '#DCEBE1',
+  darkPressed: '#2B4C3D',
+  scrim: '#17291F99',
+  orange: '#A44924',
+  tint: '#E5F0E8',
+  sand: '#F4EBD8',
+  danger: '#A12C32',
+  dangerTint: '#FBECEE',
+};
+
+export const styles = StyleSheet.create({
+  title: {
+    fontSize: 24,
+    lineHeight: 28,
+    fontWeight: '700',
+    color: palette.ink,
+  },
+  heading: {
+    fontSize: 20,
+    lineHeight: 24,
+    fontWeight: '600',
+    color: palette.ink,
+  },
+  text: { fontSize: 16, lineHeight: 24, color: palette.ink },
+  muted: { fontSize: 14, lineHeight: 20, color: palette.muted },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  spread: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 14,
+  },
+  panel: {
+    backgroundColor: palette.white,
+    borderRadius: 8,
+    padding: 16,
+    gap: 12,
+  },
+  line: { height: 1, backgroundColor: palette.line },
+  section: { gap: 20 },
+  label: {
+    fontSize: 12,
+    lineHeight: 16,
+    fontWeight: '500',
+    color: palette.muted,
+    marginBottom: 6,
+  },
+  input: {
+    includeFontPadding: false,
+    backgroundColor: palette.white,
+    borderWidth: 1,
+    borderColor: palette.line,
+    borderRadius: 4,
+    paddingHorizontal: 16,
+    paddingVertical: 15,
+    fontSize: 16,
+    lineHeight: 24,
+    color: palette.ink,
+    minHeight: 56,
+  },
+});
